@@ -68,9 +68,11 @@ body {
 
  .home-img {
     margin-top: 50px;
+    display: flex;
 
  }
  .home-img img{
+    display: flex;
     padding-bottom: 20%;
     max-width: 650px;
     height: auto;
@@ -163,7 +165,29 @@ body {
     box-shadow: 0 0 5px #067baa,
     0 0 25px #067baa;
 }
+.btn-box1{
+    margin-left: 30px;
+    display: inline-block;
+    padding: 12px 28px;
+    background:#0e506a;
+    border-radius: 40px;
+    font-size: 16px;
+    color:#063345;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #067baa,
+    0 0 25px #067baa;
+}
  .btn-box:hover{
+    box-shadow: 0 0 5px #059ad5,
+    0 0 25px #059ad5, 0 0 50px #059ad5,
+    0 0 100px #059ad5, 0 0 200px #059ad5;
+ }
+ .btn-box1:hover{
     box-shadow: 0 0 5px #059ad5,
     0 0 25px #059ad5, 0 0 50px #059ad5,
     0 0 100px #059ad5, 0 0 200px #059ad5;
@@ -226,8 +250,8 @@ body {
     padding: 90px;
 }
 .education-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(259px,1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
